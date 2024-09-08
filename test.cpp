@@ -34,7 +34,7 @@ int main()
 void readinput(string items[], int quantity[], double price[],  int amount)//function definition that reads the user input
 {
     cout << "Item #" << (amount + 1) << ":" << endl;
-    cout << "Name: ";
+    cout << "Name HEREEEEEEEEEE: ";
     cin.ignore();
     getline(cin, items[amount]);
     cout << "Quantity: ";
