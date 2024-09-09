@@ -1,9 +1,7 @@
 #include <iostream>  /*Preprocessor directive with the header files from C++ libraries*/
 #include <iomanip> 
 #include <string>
-using namespace std; /*namespace function to link the C++ libraries with the coding*/
-/*Note by me: Apparently the code couldnt run properly in other compiler but only in Visual Studio Code,
-I apologize in advance that it may not work in other compiler softwares ;_;*/
+using namespace std; 
 
 void readinput(string items[], int quantities[], double prices[], int amount); //Declared modular functions
 void InvoiceOutput(string items[], int quantity[], double price[], int totalitems);
@@ -34,7 +32,7 @@ int main()
 void readinput(string items[], int quantity[], double price[],  int amount)//function definition that reads the user input
 {
     cout << "Item #" << (amount + 1) << ":" << endl;
-    cout << "Name HEREEEEEEEEEE: ";
+    cout << "Name: ";
     cin.ignore();
     getline(cin, items[amount]);
     cout << "Quantity: ";
